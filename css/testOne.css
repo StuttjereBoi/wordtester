@@ -1,0 +1,117 @@
+html{
+  background-image: url("/wordtester/img/bimg.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+body{
+  margin: 0px;
+  font-family: "yu gothic";
+}
+.container{
+  width: 40%;
+  background-color: white;
+  overflow: hidden;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  padding-bottom: 30px;
+  border-radius: 40px;
+  border: 1px solid rgba(169,169,169);
+}
+.title{
+  overflow: hidden;
+}
+.title h1{
+  font-size: 30px;
+  margin-top: 25px;
+  font-weight: lighter;
+  padding-bottom: 20px;
+  margin-bottom: 0px;
+  border-bottom: 1px solid rgba(169,169,169);
+}
+.vra{
+  width: 50%;
+  float: left;
+}
+.vra h3{
+  font-size: 25px;
+  margin-top: 5px;
+  margin-bottom: 0px;
+  padding-bottom: 5px;
+  font-weight: lighter;
+  border-bottom: 1px solid rgba(169,169,169);
+}
+.ant{
+  width: 50%;
+  float: right;
+}
+.ant h3{
+  font-size: 25px;
+  margin-top: 5px;
+  margin-bottom: 0px;
+  padding-bottom: 5px;
+  font-weight: lighter;
+  border-bottom: 1px solid rgba(169,169,169);
+}
+.qn{
+  float: left;
+  width: 40%;
+  margin-left: 5%;
+  margin-top: 10px;
+  height: 30px;
+  border-radius: 15px;
+  border: 1px solid rgba(169,169,169);
+  background-color: rgba(236,236,236);
+  font-size: 25px;
+  text-align: center;
+  font-weight: lighter;
+  font-family: "yu gothic";
+  overflow: hidden;
+}
+.qn:focus{
+  outline: none;
+  background-color: rgba(205,228,236);
+  border: 1px solid rgba(151,188,199);
+}
+.fill{
+  float: right;
+  width: 40%;
+  margin-right: 5%;
+  margin-top: 10px;
+  height: 30px;
+  border-radius: 15px;
+  border: 1px solid rgba(169,169,169);
+  background-color: rgba(236,236,236);
+  font-size: 25px;
+  text-align: center;
+  font-weight: lighter;
+  font-family: "yu gothic";
+  overflow: hidden;
+}
+.fill:focus{
+  outline: none;
+  background-color: rgba(205,228,236);
+  border: 1px solid rgba(151,188,199);
+}
+.punten{
+  font-size: 10px;
+  float: left;
+}
+.btn{
+  float: right;
+  height: 40px;
+  margin-top: 20px;
+  width: 30%;
+  margin-right: 15%;
+  border-radius: 20px;
+  border: 1px solid rgba(169,169,169);
+  background-color: rgba(232,64,124,0.5);
+  font-weight: lighter;
+  font-family: "yu gothic";
+  color: white;
+  font-size: 20px;
+}
+.btn:focus{
+  outline: none;
+}

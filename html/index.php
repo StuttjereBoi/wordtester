@@ -4,44 +4,46 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>WoordjesTester</title>
+    <link rel="stylesheet" href="/wordtester/css/homepage.css">
   </head>
   <body>
-    <header>Woordjes tester</header>
+    <div class="container">
+    <div class="title"><h1>Voer woordjes in.</h1></div>
     <form method="get">
       <!--Question One-->
-      <input type="text" name="Qone" value="">
-      <input type="text" name="ansOne" value="">
+      <input type="text" autocomplete="off" class="question" name="Qone" value="">
+      <input type="text" autocomplete="off" name="ansOne" class="answer" value="">
       <!--Question Two-->
-      <input type="text" name="Qtwo" value="">
-      <input type="text" name="ansTwo" value="">
+      <input type="text" autocomplete="off" class="question" name="Qtwo" value="">
+      <input type="text" autocomplete="off" name="ansTwo" class="answer" value="">
       <!--Question Three-->
-      <input type="text" name="Qthree" value="">
-      <input type="text" name="ansThree" value="">
+      <input type="text" autocomplete="off" class="question" name="Qthree" value="">
+      <input type="text" autocomplete="off" name="ansThree"  class="answer" value="">
       <!--Question Four-->
-      <input type="text" name="Qfour" value="">
-      <input type="text" name="ansFour" value="">
+      <input type="text" autocomplete="off" class="question" name="Qfour" value="">
+      <input type="text" autocomplete="off" name="ansFour" class="answer"  value="">
       <!--Question Five-->
-      <input type="text" name="Qfive" value="">
-      <input type="text" name="ansFive" value="">
+      <input type="text" autocomplete="off" class="question" name="Qfive" value="">
+      <input type="text" autocomplete="off" name="ansFive" class="answer"  value="">
       <!--Question Six-->
-      <input type="text" name="Qsix" value="">
-      <input type="text" name="ansSix" value="">
+      <input type="text" autocomplete="off" class="question" name="Qsix" value="">
+      <input type="text" autocomplete="off" name="ansSix" class="answer" value="">
       <!--Question Seven-->
-      <input type="text" name="Qseven" value="">
-      <input type="text" name="ansSeven" value="">
+      <input type="text" autocomplete="off" class="question" name="Qseven" value="">
+      <input type="text" autocomplete="off" name="ansSeven" class="answer" value="">
       <!--Question Eight-->
-      <input type="text" name="Qeight" value="">
-      <input type="text" name="ansEight" value="">
+      <input type="text" autocomplete="off" class="question" name="Qeight" value="">
+      <input type="text" autocomplete="off" name="ansEight" class="answer" value="">
       <!--Question Nine-->
-      <input type="text" name="Qnine" value="">
-      <input type="text" name="ansNine" value="">
+      <input type="text" autocomplete="off" class="question" name="Qnine" value="">
+      <input type="text" autocomplete="off" name="ansNine" class="answer"  value="">
       <!--Question Ten-->
-      <input type="text" name="Qten" value="">
-      <input type="text" name="ansTen" value="">
+      <input type="text" autocomplete="off" class="question" name="Qten" value="">
+      <input type="text" autocomplete="off" name="ansTen" class="answer" value="">
 
-      <button name="btn">press</button>
-      <button name="delete">delete</button>
+      <button class="btn" name="btn">Convert</button>
+      <button class="btn2" name="delete">Verwijder</button>
     </form>
     <?php
 
@@ -110,11 +112,21 @@
         unset($A3);
         unset($A4);
         unset($A5);
+        unset($Q6);
+        unset($Q7);
+        unset($Q8);
+        unset($Q9);
+        unset($Q10);
+        unset($A6);
+        unset($A7);
+        unset($A8);
+        unset($A9);
+        unset($A10);
       }else{}
 
 
      ?>
-     <a href="pagina2.php">hoi</a>
-     <p>nou nee</p>
+     <a class="send" href="testOne.php"><p>Start</p></a>
+   </div>
   </body>
 </html>

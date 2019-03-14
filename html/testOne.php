@@ -6,141 +6,147 @@ $i = "";
   <head>
     <meta charset="utf-8">
     <title></title>
+    <link rel="stylesheet" href="/wordtester/css/testOne.css">
   </head>
   <body>
+    <div class="container">
+      <div class="title"><h1>Vul in</h1></div>
+      <div class="vra"><h3>Vraag:</h3></div>
+      <div class="ant"><h3>Antwoord:</h3></div>
     <form method="get">
       <!--Question 1-->
-      <p><?php
+      <?php
       if(!isset($_SESSION['Q1']) || ($_SESSION['Q1'] == "")){
       echo "";
       }else{
-      echo 'vraag 1 : '.$_SESSION['Q1'];
-      }?></p>
+      echo "<input type='text' class='qn' readonly='true' value=".$_SESSION['Q1']."?>";
+      }?>
       <?php
       // als er een vraag is
       if($_SESSION['Q1'] !== "")
-      echo '<input type="text" name="fillOne" value="">';
+      echo '<input type="text" class="fill" name="fillOne" value="">';
       ?>
+
       <!--Question 2-->
-      <p><?php
+      <?php
       if(!isset($_SESSION['Q2']) || ($_SESSION['Q2'] == "")){
       echo "";
       }else{
-      echo 'vraag 2 : '.$_SESSION['Q2'];
-      }?></p>
+      echo "<input type='text' class='qn' readonly='true' value=".$_SESSION['Q2']."?>";
+      }?>
       <?php
       // als er een vraag is
       if($_SESSION['Q2'] !== "")
-      echo '<input type="text" name="fillTwo" value="">';
+      echo '<input type="text" class="fill" name="fillTwo" value="">';
       ?>
 
       <!--Question 3-->
-      <p><?php
+      <?php
       if(!isset($_SESSION['Q3']) || ($_SESSION['Q3'] == "")){
       echo "";
       }else{
-      echo 'vraag 3 : '.$_SESSION['Q3'];
-      }?></p>
+      echo "<input type='text' class='qn' readonly='true' value=".$_SESSION['Q3']."?>";
+      }?>
       <?php
       // als er een vraag is
       if($_SESSION['Q3'] !== "")
-      echo '<input type="text" name="fillThree" value="">';
+      echo '<input type="text" class="fill" name="fillThree" value="">';
       ?>
 
       <!--Question 4-->
-      <p><?php
+      <?php
       // als er een vraag is.
       if(!isset($_SESSION['Q4']) || ($_SESSION['Q4'] == "")){
       echo "";
       }else{
-      echo 'vraag 4 : '.$_SESSION['Q4'];
-      }?></p>
+      echo "<input type='text' class='qn' readonly='true' value=".$_SESSION['Q4']."?>";
+      }?>
       <?php
       // als er een vraag is
       if($_SESSION['Q4'] !== "")
-      echo '<input type="text" name="fillFour" value="">';
+      echo '<input type="text" class="fill" name="fillFour" value="">';
       ?>
 
       <!--Question 5-->
-      <p><?php
+      <?php
       if(!isset($_SESSION['Q5']) || ($_SESSION['Q5'] == "")){
       echo "";
       }else{
-      echo 'vraag 5 : '.$_SESSION['Q5'];
-      }?></p>
+      echo "<input type='text' class='qn' readonly='true' value=".$_SESSION['Q5']."?>";
+      }?>
       <?php
       // als er een vraag is
       if($_SESSION['Q5'] !== "")
-      echo '<input type="text" name="fillFive" value="">';
+      echo '<input type="text" class="fill" name="fillFive" value="">';
       ?>
 
       <!--Question 6-->
-      <p><?php
+      <?php
       if(!isset($_SESSION['Q6']) || ($_SESSION['Q6'] == "")){
       echo "";
       }else{
-      echo 'vraag 6 : '.$_SESSION['Q6'];
-      }?></p>
+      echo "<input type='text' class='qn' readonly='true' value=".$_SESSION['Q6']."?>";
+      }?>
       <?php
       // als er een vraag is
       if($_SESSION['Q6'] !== "")
-      echo '<input type="text" name="fillSix" value="">';
+      echo '<input type="text" class="fill" name="fillSix" value="">';
       ?>
 
       <!--Question 7-->
-      <p><?php
+      <?php
       if(!isset($_SESSION['Q7']) || ($_SESSION['Q7'] == "")){
       echo "";
       }else{
-      echo 'vraag 7 : '.$_SESSION['Q7'];
-      }?></p>
+      echo "<input type='text' class='qn' readonly='true' value=".$_SESSION['Q7']."?>";
+      }?>
       <?php
       // als er een vraag is
       if($_SESSION['Q7'] !== "")
-      echo '<input type="text" name="fillSeven" value="">';
+      echo '<input type="text" class="fill" name="fillSeven" value="">';
       ?>
 
       <!--Question 8-->
-      <p><?php
+      <?php
       if(!isset($_SESSION['Q8']) || ($_SESSION['Q8'] == "")){
       echo "";
       }else{
-      echo 'vraag 8 : '.$_SESSION['Q8'];
-      }?></p>
+      echo "<input type='text' class='qn' readonly='true' value=".$_SESSION['Q8']."?>";
+      }?>
       <?php
       // als er een vraag is
       if($_SESSION['Q8'] !== "")
-      echo '<input type="text" name="fillEight" value="">';
+      echo '<input type="text" class="fill" name="fillEight" value="">';
       ?>
 
       <!--Question 9-->
-      <p><?php
+      <?php
       if(!isset($_SESSION['Q9']) || ($_SESSION['Q9'] == "")){
       echo "";
       }else{
-      echo 'vraag 9 : '.$_SESSION['Q9'];
-      }?></p>
+      echo "<input type='text' class='qn' readonly='true' value=".$_SESSION['Q9']."?>";
+      }?>
       <?php
       // als er een vraag is
       if($_SESSION['Q9'] !== "")
-      echo '<input type="text" name="fillNine" value="">';
+      echo '<input type="text" class="fill" name="fillNine" value="">';
       ?>
 
       <!--Question 10-->
-      <p><?php
+      <?php
       if(!isset($_SESSION['Q10']) || ($_SESSION['Q10'] == "")){
       echo "";
       }else{
-      echo 'vraag 10 : '.$_SESSION['Q10'];
-      }?></p>
+      echo "<input type='text' class='qn' readonly='true' value=".$_SESSION['Q10']."?>";
+      }?>
       <?php
       // als er een vraag is
       if($_SESSION['Q10'] !== "")
-      echo '<input type="text" name="fillTen" value="">';
+      echo '<input type="text" class="fill" name="fillTen" value="">';
       ?>
 
 
-      <button name="press">press</button>
+      <button name="press" class="btn">press</button>
     </form>
     <?php
     $punten = 0;
@@ -210,60 +216,62 @@ $i = "";
     switch ($punten) {
       case 1:
       {
-        echo "je hebt 10% goed";
+        echo '<div class="punten"><p>je hebt 10% goed</p></div>';
         break;
       }
       case 2:
       {
-        echo "je hebt 20% goed";
+        echo '<div class="punten"><p>je hebt 20% goed</p></div>';
         break;
       }
       case 3:
       {
-      echo "je hebt 30% goed";
+      echo '<div class="punten"><p>je hebt 30% goed</p></div>';
       break;
     }
       case 4:
       {
-        echo "je hebt 40% goed";
+        echo '<div class="punten"><p>je hebt 40% goed</p></div>';
         break;
       }
       case 5:
       {
-        echo "je hebt 50% goed";
+        echo '<div class="punten"><p>je hebt 50% goed</p></div>';
         break;
       }
       case 6:
       {
-        echo "je hebt 60% goed";
+        echo '<div class="punten"><p>je hebt 60% goed</p></div>';
         break;
       }
       case 7:
       {
-        echo "je hebt 70% goed";
+        echo '<div class="punten"><p>je hebt 70% goed</p></div>';
         break;
       }
       case 8:
       {
-        echo "je hebt 80% goed";
+        echo '<div class="punten"><p>je hebt 80% goed</p></div>';
         break;
       }
       case 9:
       {
-        echo "je hebt 90% goed";
+        echo '<div class="punten"><p>je hebt 90% goed</p></div>';
         break;
       }
       case 10:
       {
-        echo "je alles goed, 100%!";
+        echo '<div class="punten"><p>je hebt alles goed, 100%!</p></div>';
         break;
       }
       default:
       {
-        echo "je hebt 0% goed.";
+        echo '<div class="punten"><p>je hebt 0% goed</p></div>';
       }
       break;
       }
      ?>
+     <a href="index.php" class="terug">terug</a>
+   </div>
   </body>
 </html>
