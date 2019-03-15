@@ -30,11 +30,11 @@ body{
   margin-bottom: 0px;
   border-bottom: 1px solid rgba(169,169,169);
 }
-.vra{
+.taal1{
   width: 50%;
   float: left;
 }
-.vra h3{
+.taal1 h3{
   font-size: 25px;
   margin-top: 5px;
   margin-bottom: 0px;
@@ -42,11 +42,11 @@ body{
   font-weight: lighter;
   border-bottom: 1px solid rgba(169,169,169);
 }
-.ant{
+.taal2{
   width: 50%;
   float: right;
 }
-.ant h3{
+.taal2 h3{
   font-size: 25px;
   margin-top: 5px;
   margin-bottom: 0px;
@@ -137,6 +137,7 @@ body{
   margin-right: 5%;
   border-radius: 20px;
   border: 1px solid rgba(169,169,169);
+
   background-color: rgba(182,207,243,0.5);
   font-weight: lighter;
   font-family: "yu gothic";
@@ -146,4 +147,7 @@ body{
 }
 a.terug{
   text-decoration: none;
+}
+.terug:hover{
+  background-color: rgba(156,188,235,0.5);
 }

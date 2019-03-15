@@ -11,6 +11,12 @@
     <div class="container">
     <div class="title"><h1>Voer woordjes in.</h1></div>
     <form method="get">
+      <!--Set Languages-->
+      <div class="taal1"><h3>Taal 1</h3>
+      <input type="text" autocomplete="off" class="taal1txt" name="taal1" value=""></div>
+      <div class="taal2"><h3>Taal 2</h3>
+      <input type="text" autocomplete="off" name="taal2" class="taal2txt" value="">
+      </div>
       <!--Question One-->
       <input type="text" autocomplete="off" class="question" name="Qone" value="">
       <input type="text" autocomplete="off" name="ansOne" class="answer" value="">
@@ -49,6 +55,10 @@
 
       if(!isset($_GET['btn'])){
       }else{
+        if(isset($_GET['taal1']) && isset($_GET['taal2'])){
+        $_SESSION['T1']=$_GET['taal1'];
+        $_SESSION['T2']=$_GET['taal2'];  
+        }
         // Question 1 //
         if(isset($_GET['Qone']) && isset($_GET['ansOne'])){
         $_SESSION['Q1']=$_GET['Qone'];

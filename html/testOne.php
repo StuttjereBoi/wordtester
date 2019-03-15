@@ -8,17 +8,23 @@ session_start();
     <link rel="stylesheet" href="/wordtester/css/testOne.css">
   </head>
   <body>
+    <!--Changes-->
+    <?php
+    if(!isset($_GET['press'])){
+    $disApp = "";
+    $disTit = '<h1>Vul in</h1>';
+    }else{
+    $disApp = 'hidden="false"';
+    $disTit = '<h1>Nakijken</h1>';
+    }
+    ?>
     <div class="container">
-      <div class="title"><h1>Vul in</h1></div>
-      <div class="vra"><h3>Vraag:</h3></div>
-      <div class="ant"><h3>Antwoord:</h3></div>
+      <div class="title"><?php echo $disTit; ?></div>
+      <div class="taal1"><h3><?php echo $_SESSION['T1']; ?></h3></div>
+      <div class="taal2"><h3><?php echo $_SESSION['T2']; ?></h3></div>
     <form method="get">
       <!--Question 1-->
       <?php
-      if(!isset($_GET['press'])){
-      $disApp = "";
-      }else{$disApp = 'hidden="false"';
-      }
       if(!isset($_SESSION['Q1']) || ($_SESSION['Q1'] == "")){
       echo "";
       }else{
@@ -26,8 +32,9 @@ session_start();
       }?>
       <?php
       // als er een vraag is
-      if($_SESSION['Q1'] !== "")
+      if($_SESSION['Q1'] !== ""){
       echo '<input type="text" class="fill" autocomplete="off" name="fillOne" value="">';
+      }else{}
       ?>
 
       <!--Question 2-->

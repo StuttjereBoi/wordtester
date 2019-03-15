@@ -30,6 +30,66 @@ body{
   padding-bottom: 20px;
   border-bottom: 1px solid rgba(169,169,169);
 }
+.taal1{
+  float: left;
+  width: 50%;
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgba(169,169,169);
+  margin-bottom: 10px;
+}
+.taal1 h3{
+  font-weight: lighter;
+  margin: 0px;
+}
+.taal1txt{
+  width: 80%;
+  margin-left: 2.5%;
+  margin-top: 10px;
+  height: 30px;
+  border-radius: 15px;
+  border: 1px solid rgba(169,169,169);
+  background-color: rgba(236,236,236);
+  font-size: 25px;
+  height: 30px;
+  text-align: center;
+  font-weight: lighter;
+  font-family: "yu gothic";
+}
+.taal1txt:focus{
+  outline: none;
+  background-color: rgba(205,228,236);
+  border: 1px solid rgba(151,188,199);
+}
+.taal2{
+  float: right;
+  width: 50%;
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgba(169,169,169);
+  margin-bottom: 10px;
+}
+.taal2 h3{
+  font-weight: lighter;
+  margin: 0px;
+}
+.taal2txt{
+  width: 80%;
+  margin-right: 2.5%;
+  margin-top: 10px;
+  height: 30px;
+  border-radius: 15px;
+  border: 1px solid rgba(169,169,169);
+  background-color: rgba(236,236,236);
+  font-size: 25px;
+  height: 30px;
+  text-align: center;
+  font-weight: lighter;
+  font-family: "yu gothic";
+}
+.taal2txt:focus{
+  outline: none;
+  background-color: rgba(205,228,236);
+  border: 1px solid rgba(151,188,199);
+}
 .question{
   float: left;
   width: 40%;
@@ -76,14 +136,17 @@ body{
   margin-left: 15%;
   border-radius: 20px;
   border: 1px solid rgba(169,169,169);
-  background-color: rgba(64,232,153,0.5);
+  background-color: rgba(187,241,186,0.5);
   font-weight: lighter;
   font-family: "yu gothic";
-  color: white;
+  color: black;
   font-size: 20px;
 }
 .btn:focus{
   outline: none;
+}
+.btn:hover{
+  background-color: rgba(146,227,144,0.5);
 }
 .btn2{
   float: right;
@@ -93,14 +156,17 @@ body{
   margin-right: 15%;
   border-radius: 20px;
   border: 1px solid rgba(169,169,169);
-  background-color: rgba(232,64,124,0.5);
+  background-color: rgba(243,180,190,0.5);
   font-weight: lighter;
   font-family: "yu gothic";
-  color: white;
+  color: black;
   font-size: 20px;
 }
 .btn2:focus{
   outline: none;
+}
+.btn2:hover{
+  background-color: rgba(234,156,169,0.5);
 }
 .send{
   float: left;
